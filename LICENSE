@@ -21,4 +21,198 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
 SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.#
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamerName | Offizielle Website</title>
+  <meta name="description" content="Offizielle Website von StreamerName – Livestreams, Social Media, Merch & Community." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --card: #181826;
+      --accent: #7c5cff;
+      --text: #ffffff;
+      --muted: #b3b3c6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1b1b2f, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 600px;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.6rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #9f8cff);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(124,92,255,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(124,92,255,0.5);
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 0.7rem 1.2rem;
+      border-radius: 12px;
+      background: #23233a;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .socials a:hover {
+      background: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>StreamerName</h1>
+    <p>Willkommen auf der offiziellen Website von <strong>StreamerName</strong> – Livestreams, Gaming, Entertainment und eine starke Community.</p>
+    <a class="btn" href="#streams">Jetzt live auf Twitch</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">Über den Streamer</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🎮 Content</h3>
+        <p>Gaming, Just Chatting, Events, Reactions und exklusive Livestream-Momente.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Community</h3>
+        <p>Eine aktive, loyale Community auf Twitch, YouTube, Discord und Social Media.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 Erfolg</h3>
+        <p>Millionen Views, starke Partnerschaften und regelmäßige Platzierungen in den Trends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="streams">
+    <h2 class="section-title">Livestreams & Plattformen</h2>
+    <div class="socials">
+      <a href="#">Twitch</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Instagram</a>
+      <a href="#">Discord</a>
+    </div>
+  </section>
+
+  <section id="merch">
+    <h2 class="section-title">Merch & Partner</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🛍 Merch</h3>
+        <p>Offizieller Merch mit limitierten Drops, exklusiv für die Community.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Sponsoren</h3>
+        <p>Zusammenarbeit mit bekannten Marken aus Gaming, Tech und Lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 StreamerName · Impressum · Datenschutz
+  </footer>
+
+</body>
+</html>
